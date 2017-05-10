@@ -203,5 +203,100 @@ namespace App.Framework.Extension
             byte[] bytes = System.Text.Encoding.GetEncoding("Cyrillic").GetBytes(txt);
             return System.Text.Encoding.ASCII.GetString(bytes);
         }
+
+        public static T ApplyFunctionToStrings<T>(this T obj, Func<string, string> func)
+        {
+            var props = obj.GetType().GetProperties();
+
+            foreach (var prop in props)
+            {
+                var value = prop.GetValue(obj, null);
+
+                if (prop.PropertyType.Name == "String")
+                {
+                    prop.SetValue(obj, func(value.ToString()));
+                }
+                else if (!prop.GetType().IsPrimitive)
+                {
+                    value.ApplyFunctionToStrings(func);
+                }
+            }
+
+            return obj;
+        }
+
+        public static string HasSlash(string FabMod)
+        {
+            return FabMod.Substring(2, 1) != "/" ? null : FabMod;
+        }
+
+        public static string StringSeparator(this string input, int Position, char Separator)
+        {
+            return string.IsNullOrEmpty(input) ? null : input.Split(Separator)[Position];
+        }
+
+        public static string FormatHelper(this string input, params object[] args)
+        {
+            return string.Format(input, args);
+        }
+
+        public static string SubstringHelper(this string input, int startIndex, int? get)
+        {
+            if (get.HasValue)
+            {
+                if (get.Value + startIndex > input.Length)
+                {
+                    get = startIndex - input.Length;
+                }
+            }
+            else
+            {
+                get = startIndex - input.Length;
+            }
+
+            return input.Substring(startIndex, get.Value);
+        }
+
+        public static string GetValueOrDefault(this string input, string _default)
+        {
+            return (string.IsNullOrEmpty(input)) ? _default : input;
+        }
+
+        public static string TruncateLeft(this string InputString, int Size)
+        {
+            int Length = InputString.Length;
+
+            if (Length <= Size)
+            {
+                return InputString;
+            }
+
+            return InputString.Substring(Length - Size);
+        }
+
+        public static string TruncateRight(this string InputString, int Size)
+        {
+            int Length = InputString.Length;
+            if (Length <= Size)
+            {
+                return InputString;
+            }
+
+            return InputString.Substring(0, Size);
+        }
+
+        public static string RemoveAccents(this string input)
+        {
+            return Regex.Replace(input, "[A-Za-z0-9]", "");
+        }
+
+        public static string NotANumberToNull(this string input)
+        {
+            int result = 0;
+
+            int.TryParse(input, out result);
+
+            return (result == 0) ? null : result.ToString();
+        }
     }
 }
