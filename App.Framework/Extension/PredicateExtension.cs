@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class PredicateExtension
     {

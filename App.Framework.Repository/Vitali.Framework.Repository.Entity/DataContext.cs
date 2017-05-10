@@ -4,10 +4,10 @@ using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Threading;
 using System.Threading.Tasks;
-using Vitali.Framework.Repository.DataContext;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.DataContext;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public class DataContext : DbContext, IDataContextAsync
     {

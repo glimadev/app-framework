@@ -1,6 +1,6 @@
-﻿using Vitali.Framework.PushNotification.Models.Common;
+﻿using App.Framework.PushNotification.Models.Common;
 
-namespace Vitali.Framework.PushNotification.Models
+namespace App.Framework.PushNotification.Models
 {
     public class IosMessage : CommonMessage
     {

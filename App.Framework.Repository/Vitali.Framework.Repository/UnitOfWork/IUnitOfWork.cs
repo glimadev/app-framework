@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Data;
-using Vitali.Framework.Repository.Infrastructure;
-using Vitali.Framework.Repository.Repositories;
+using App.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Repositories;
 
-namespace Vitali.Framework.Repository.UnitOfWork
+namespace App.Framework.Repository.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

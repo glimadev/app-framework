@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Vitali.Framework.PushNotification.Models.Common;
+using App.Framework.PushNotification.Models.Common;
 
-namespace Vitali.Framework.PushNotification.Core
+namespace App.Framework.PushNotification.Core
 {
 	public class PushBroker : IPushBroker
 	{

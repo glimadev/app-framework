@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Vitali.Framework.Json;
+using App.Framework.Json;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public static class GeoLocationHelper
     {

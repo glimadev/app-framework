@@ -1,5 +1,5 @@
 ﻿
-namespace Vitali.Framework.Repository.Infrastructure
+namespace App.Framework.Repository.Infrastructure
 {
     public enum ObjectState
     {

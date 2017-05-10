@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	public static class FluentNotification
 	{

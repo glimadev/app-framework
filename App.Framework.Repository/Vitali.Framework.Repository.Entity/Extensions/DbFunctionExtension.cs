@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 
-namespace Vitali.Framework.Repository.Entity.Extensions
+namespace App.Framework.Repository.Entity.Extensions
 {
     public static class DbFunctionExtension
     {

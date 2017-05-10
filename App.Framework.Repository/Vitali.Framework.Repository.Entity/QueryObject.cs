@@ -1,9 +1,9 @@
 ﻿using LinqKit;
 using System;
 using System.Linq.Expressions;
-using Vitali.Framework.Repository.Repositories;
+using App.Framework.Repository.Repositories;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public abstract class QueryObject<TEntity> : IQueryObject<TEntity>
     {

@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public static class ExcelHelper
     {

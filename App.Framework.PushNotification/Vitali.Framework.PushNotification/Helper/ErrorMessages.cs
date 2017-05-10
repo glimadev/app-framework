@@ -1,5 +1,5 @@
 ﻿
-namespace Vitali.Framework.PushNotification.Helper
+namespace App.Framework.PushNotification.Helper
 {
     public static class ErrorMessages
     {

@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Vitali.Framework.Security
+namespace App.Framework.Security
 {
     /// <summary>
     /// Classes de segurança

@@ -5,9 +5,9 @@ using System.Collections.ObjectModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public abstract class FakeDbSet<TEntity> : DbSet<TEntity>, IDbSet<TEntity> where TEntity : Entity, new()
     {

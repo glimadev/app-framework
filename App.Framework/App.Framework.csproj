@@ -7,8 +7,8 @@
     <ProjectGuid>{E0953A9E-32B1-4F1A-8879-BFD715E391C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vitali.Framework</RootNamespace>
-    <AssemblyName>Vitali.Framework</AssemblyName>
+    <RootNamespace>App.Framework</RootNamespace>
+    <AssemblyName>App.Framework</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

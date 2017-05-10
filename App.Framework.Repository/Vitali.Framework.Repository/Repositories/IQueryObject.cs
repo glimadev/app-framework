@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Vitali.Framework.Repository.Repositories
+namespace App.Framework.Repository.Repositories
 {
     public interface IQueryObject<TEntity>
     {

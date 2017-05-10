@@ -1,7 +1,7 @@
 ﻿using System;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.DataContext
+namespace App.Framework.Repository.DataContext
 {
     public interface IDataContext : IDisposable
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace Vitali.Framework.MapperUtils
+namespace App.Framework.MapperUtils
 {
     public static class Mapper
     {

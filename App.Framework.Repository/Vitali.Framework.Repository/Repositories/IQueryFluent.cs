@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Repositories
+namespace App.Framework.Repository.Repositories
 {
     public interface IQueryFluent<TEntity> where TEntity : IObjectState
     {

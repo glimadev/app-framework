@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Repositories
+namespace App.Framework.Repository.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class, IObjectState
     {

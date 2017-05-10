@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Serialization;
 
-namespace Vitali.Framework.Repository.Infrastructure
+namespace App.Framework.Repository.Infrastructure
 {
     public interface IObjectState
     {

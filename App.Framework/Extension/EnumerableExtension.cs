@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class EnumerableExtension
     {

@@ -4,7 +4,7 @@ using System.Net.Configuration;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework
+namespace App.Framework
 {
     public static class EmailHelper
     {

@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
-using Vitali.Framework.PushNotification.Core;
-using Vitali.Framework.PushNotification.Projects.Android;
+using App.Framework.PushNotification.Core;
+using App.Framework.PushNotification.Projects.Android;
 
-namespace Vitali.Framework.PushNotification.Models.Common
+namespace App.Framework.PushNotification.Models.Common
 {
     public class ResultPush
     {

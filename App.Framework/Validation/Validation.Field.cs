@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Linq;
 
-namespace Vitali.Framework.Validation
+namespace App.Framework.Validation
 {
     /// <summary>
     /// Classe para validar dados

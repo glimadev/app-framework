@@ -4,10 +4,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using Vitali.Framework.Repository.Infrastructure;
-using Vitali.Framework.Repository.Repositories;
+using App.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Repositories;
 
-namespace Vitali.Framework.Repository.Service
+namespace App.Framework.Repository.Service
 {
     public interface IService<TEntity> where TEntity : IObjectState
     {

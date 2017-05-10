@@ -1,5 +1,5 @@
 ﻿
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class IntExtension
     {

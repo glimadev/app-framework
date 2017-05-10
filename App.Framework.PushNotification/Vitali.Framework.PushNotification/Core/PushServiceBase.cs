@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Vitali.Framework.PushNotification.Models.Common;
+using App.Framework.PushNotification.Models.Common;
 
-namespace Vitali.Framework.PushNotification.Core
+namespace App.Framework.PushNotification.Core
 {
 	public delegate void ChannelCreatedDelegate(object sender, IPushChannel pushChannel);
 	public delegate void ChannelDestroyedDelegate(object sender);

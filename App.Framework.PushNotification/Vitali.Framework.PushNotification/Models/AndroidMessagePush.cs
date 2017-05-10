@@ -1,5 +1,5 @@
 ﻿
-namespace Vitali.Framework.PushNotification.Models
+namespace App.Framework.PushNotification.Models
 {
     public class AndroidMessagePush
     {

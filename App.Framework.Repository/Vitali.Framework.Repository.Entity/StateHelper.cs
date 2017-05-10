@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Data.Entity;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public class StateHelper
     {

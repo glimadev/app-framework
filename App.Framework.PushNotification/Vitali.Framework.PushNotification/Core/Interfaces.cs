@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Vitali.Framework.PushNotification.Models.Common;
+using App.Framework.PushNotification.Models.Common;
 
-namespace Vitali.Framework.PushNotification.Core
+namespace App.Framework.PushNotification.Core
 {
 	public delegate void SendNotificationCallbackDelegate(object sender, SendNotificationResult result);
 

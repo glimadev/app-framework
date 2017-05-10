@@ -5,9 +5,9 @@ using System.Net.Security;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
-using Vitali.Framework.PushNotification.Core;
+using App.Framework.PushNotification.Core;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	public class ApplePushChannel : IPushChannel
 	{

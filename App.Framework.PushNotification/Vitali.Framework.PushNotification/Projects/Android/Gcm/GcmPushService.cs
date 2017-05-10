@@ -1,7 +1,7 @@
 ﻿using System;
-using Vitali.Framework.PushNotification.Core;
+using App.Framework.PushNotification.Core;
 
-namespace Vitali.Framework.PushNotification.Projects.Android
+namespace App.Framework.PushNotification.Projects.Android
 {
 	public class GcmPushService : PushServiceBase
 	{

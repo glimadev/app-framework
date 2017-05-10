@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading;
 using System.Threading.Tasks;
-using Vitali.Framework.Repository.DataContext;
-using Vitali.Framework.Repository.Infrastructure;
+using App.Framework.Repository.DataContext;
+using App.Framework.Repository.Infrastructure;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public interface IFakeDbContext : IDataContextAsync
     {

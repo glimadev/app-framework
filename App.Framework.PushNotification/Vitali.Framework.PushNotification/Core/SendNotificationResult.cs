@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vitali.Framework.PushNotification.Core
+namespace App.Framework.PushNotification.Core
 {
 	public class SendNotificationResult
 	{

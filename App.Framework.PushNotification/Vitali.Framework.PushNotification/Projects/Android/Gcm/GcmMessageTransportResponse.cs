@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Vitali.Framework.PushNotification.Projects.Android
+namespace App.Framework.PushNotification.Projects.Android
 {
 	public class GcmMessageTransportResponse
 	{

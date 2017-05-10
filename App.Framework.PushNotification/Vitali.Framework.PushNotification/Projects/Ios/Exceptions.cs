@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	public class ConnectionFailureException : Exception
 	{

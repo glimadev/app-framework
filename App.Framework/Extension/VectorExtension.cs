@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class VectorExtension
     {

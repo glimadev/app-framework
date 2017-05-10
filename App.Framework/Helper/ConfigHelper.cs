@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public static class ConfigHelper
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlTypes;
 
-namespace Vitali.Framework.Validation
+namespace App.Framework.Validation
 {
     /// <summary>
     /// Classe para validar dados

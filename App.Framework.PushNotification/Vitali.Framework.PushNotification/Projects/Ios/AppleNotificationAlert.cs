@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 //using Newtonsoft.Json.Linq;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	/// <summary>
 	/// Alert Portion of the Notification Payload

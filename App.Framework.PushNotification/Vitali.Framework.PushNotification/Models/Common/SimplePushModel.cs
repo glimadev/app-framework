@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Vitali.Framework.PushNotification.Models.Common
+namespace App.Framework.PushNotification.Models.Common
 {
     public class SimplePushModel
     {

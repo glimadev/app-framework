@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System.Collections.Generic;
 
-namespace Vitali.Framework.Json
+namespace App.Framework.Json
 {
     public static class JsonUtils
     {

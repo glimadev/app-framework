@@ -1,6 +1,6 @@
-﻿using Vitali.Framework.Helper;
+﻿using App.Framework.Helper;
 
-namespace Vitali.Framework.PushNotification.Helper
+namespace App.Framework.PushNotification.Helper
 {
     public static class GetConfig
     {

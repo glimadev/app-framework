@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public static class LogHelper
     {
@@ -99,7 +99,7 @@ namespace Vitali.Framework.Helper
 
         //                                string assemblyName = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
 
-        //                                Type typeOfAlteredField = Type.GetType("Vitali.DFG.Infrastructure.Data.DataAccess." + commentSplited[1] + ", " + assemblyName);
+        //                                Type typeOfAlteredField = Type.GetType("App.DFG.Infrastructure.Data.DataAccess." + commentSplited[1] + ", " + assemblyName);
 
         //                                //1x1
         //                                if (commentSplited[0] == "1")

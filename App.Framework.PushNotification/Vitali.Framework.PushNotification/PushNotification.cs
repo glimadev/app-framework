@@ -4,14 +4,14 @@ using System;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Vitali.Framework.PushNotification.Core;
-using Vitali.Framework.PushNotification.Helper;
-using Vitali.Framework.PushNotification.Models;
-using Vitali.Framework.PushNotification.Models.Common;
-using Vitali.Framework.PushNotification.Projects.Android;
-using Vitali.Framework.PushNotification.Projects.Ios;
+using App.Framework.PushNotification.Core;
+using App.Framework.PushNotification.Helper;
+using App.Framework.PushNotification.Models;
+using App.Framework.PushNotification.Models.Common;
+using App.Framework.PushNotification.Projects.Android;
+using App.Framework.PushNotification.Projects.Ios;
 
-namespace Vitali.Framework.PushNotification
+namespace App.Framework.PushNotification
 {
     public static class PushNotification
     {

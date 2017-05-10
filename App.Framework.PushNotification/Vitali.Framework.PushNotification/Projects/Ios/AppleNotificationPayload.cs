@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	public class AppleNotificationPayload
 	{

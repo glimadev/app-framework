@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
-using Vitali.Framework.PushNotification.Core;
+using App.Framework.PushNotification.Core;
 
-namespace Vitali.Framework.PushNotification.Projects.Ios
+namespace App.Framework.PushNotification.Projects.Ios
 {
 	public class ApplePushChannelSettings : IPushChannelSettings
 	{

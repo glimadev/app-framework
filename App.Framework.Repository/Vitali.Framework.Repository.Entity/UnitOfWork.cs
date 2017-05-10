@@ -7,12 +7,12 @@ using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Threading.Tasks;
-using Vitali.Framework.Repository.DataContext;
-using Vitali.Framework.Repository.Infrastructure;
-using Vitali.Framework.Repository.Repositories;
-using Vitali.Framework.Repository.UnitOfWork;
+using App.Framework.Repository.DataContext;
+using App.Framework.Repository.Infrastructure;
+using App.Framework.Repository.Repositories;
+using App.Framework.Repository.UnitOfWork;
 
-namespace Vitali.Framework.Repository.Entity
+namespace App.Framework.Repository.Entity
 {
     public class UnitOfWork : IUnitOfWorkAsync
     {

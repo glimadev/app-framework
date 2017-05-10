@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vitali.Framework.PushNotification.Projects.Android
+namespace App.Framework.PushNotification.Projects.Android
 {
 	public class GcmMessageTransportException : Exception
 	{

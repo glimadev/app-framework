@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class StringExtension
     {

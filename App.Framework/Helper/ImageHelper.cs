@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public static class ImageHelper
     {

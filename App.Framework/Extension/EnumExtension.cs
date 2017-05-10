@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Vitali.Framework.Extension
+namespace App.Framework.Extension
 {
     public static class EnumExtension
     {

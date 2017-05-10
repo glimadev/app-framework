@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework.Helper
+namespace App.Framework.Helper
 {
     public class WebClientHelper
     {

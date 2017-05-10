@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vitali.Framework.Repository.DataContext
+namespace App.Framework.Repository.DataContext
 {
     public interface IDataContextAsync : IDataContext
     {

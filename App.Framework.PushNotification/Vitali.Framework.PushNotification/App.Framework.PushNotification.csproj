@@ -7,8 +7,8 @@
     <ProjectGuid>{DE4D67CD-308A-464C-AF12-84FD9670916E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vitali.Framework.PushNotification</RootNamespace>
-    <AssemblyName>Vitali.Framework.PushNotification</AssemblyName>
+    <RootNamespace>App.Framework.PushNotification</RootNamespace>
+    <AssemblyName>App.Framework.PushNotification</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\..\CenarioLeads\Desempata\src\</SolutionDir>
@@ -147,9 +147,9 @@
     <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Vitali.Framework\Vitali.Framework.csproj">
+    <ProjectReference Include="..\..\App.Framework\App.Framework.csproj">
       <Project>{e0953a9e-32b1-4f1a-8879-bfd715e391c5}</Project>
-      <Name>Vitali.Framework</Name>
+      <Name>App.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

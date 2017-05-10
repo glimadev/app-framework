@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System;
 
-namespace Vitali.Framework.MapperUtils.Converter
+namespace App.Framework.MapperUtils.Converter
 {
     public class NullDateTimeTypeConverter : TypeConverter<string, DateTime?>
     {
