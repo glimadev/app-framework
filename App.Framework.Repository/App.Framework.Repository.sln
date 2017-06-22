@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitali.Framework.Repository", "Vitali.Framework.Repository\Vitali.Framework.Repository.csproj", "{825F7A64-9B06-4252-87D4-2B52DF415C1F}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Framework.Repository", "App.Framework.Repository\App.Framework.Repository.csproj", "{825F7A64-9B06-4252-87D4-2B52DF415C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitali.Framework.Repository.Entity", "Vitali.Framework.Repository.Entity\Vitali.Framework.Repository.Entity.csproj", "{F8AA1A23-E5C3-4D80-AD78-6C2D2580B258}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Framework.Repository.Entity", "App.Framework.Repository.Entity\App.Framework.Repository.Entity.csproj", "{F8AA1A23-E5C3-4D80-AD78-6C2D2580B258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitali.Framework.Repository.Service", "Vitali.Framework.Repository.Service\Vitali.Framework.Repository.Service.csproj", "{A4E78E57-0BC9-4FFF-9EBE-248DDB4706C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Framework.Repository.Service", "App.Framework.Repository.Service\App.Framework.Repository.Service.csproj", "{A4E78E57-0BC9-4FFF-9EBE-248DDB4706C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Framework.Repository.Cached", "App.Framework.Repository.Cached\App.Framework.Repository.Cached.csproj", "{1A65168F-D432-47DB-ACD4-0A45A06C3E89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{A4E78E57-0BC9-4FFF-9EBE-248DDB4706C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4E78E57-0BC9-4FFF-9EBE-248DDB4706C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4E78E57-0BC9-4FFF-9EBE-248DDB4706C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A65168F-D432-47DB-ACD4-0A45A06C3E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A65168F-D432-47DB-ACD4-0A45A06C3E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A65168F-D432-47DB-ACD4-0A45A06C3E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A65168F-D432-47DB-ACD4-0A45A06C3E89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

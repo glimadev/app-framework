@@ -4,11 +4,30 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace App.Framework.Helper
 {
     public static class ImageHelper
     {
+        public static Image GetImageFromUrl(string imgUrl)
+        {
+            Image image;
+
+            using (var wc = new WebClient())
+            {
+                using (var imgStream = new MemoryStream(wc.DownloadData(imgUrl)))
+                {
+                    using (var objImage = Image.FromStream(imgStream))
+                    {
+                        image = objImage;
+                    }
+                }
+            }
+
+            return image;
+        }
+
         public static bool Crop(string folder, string fileName, int width = 250, int height = 250)
         {
             try

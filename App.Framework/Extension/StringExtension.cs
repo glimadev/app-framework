@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -206,19 +208,37 @@ namespace App.Framework.Extension
 
         public static T ApplyFunctionToStrings<T>(this T obj, Func<string, string> func)
         {
-            var props = obj.GetType().GetProperties();
-
-            foreach (var prop in props)
+            if (obj is IList && obj.GetType().IsGenericType)
             {
-                var value = prop.GetValue(obj, null);
+                IEnumerable auxAsEnumerableValue = (IEnumerable)obj;
 
-                if (prop.PropertyType.Name == "String")
+                foreach (var auxAsEnumerable in auxAsEnumerableValue)
                 {
-                    prop.SetValue(obj, func(value.ToString()));
+                    if (auxAsEnumerable != null && auxAsEnumerable.GetType().Name != "String")
+                    {
+                        auxAsEnumerable.ApplyFunctionToStrings(func);
+                    }
                 }
-                else if (!prop.GetType().IsPrimitive)
+            }
+            else
+            {
+                var props = obj.GetType().GetProperties();
+
+                foreach (var prop in props)
                 {
-                    value.ApplyFunctionToStrings(func);
+                    var value = prop.GetValue(obj, null);
+
+                    if (value != null)
+                    {
+                        if (prop.PropertyType.Name == "String")
+                        {
+                            prop.SetValue(obj, func(value.ToString()));
+                        }
+                        else if (!value.GetType().IsPrimitive && prop.PropertyType.Name != "DateTime")
+                        {
+                            value.ApplyFunctionToStrings(func);
+                        }
+                    }
                 }
             }
 
@@ -264,6 +284,28 @@ namespace App.Framework.Extension
 
         public static string TruncateLeft(this string InputString, int Size)
         {
+            if (string.IsNullOrEmpty(InputString))
+            {
+                return InputString;
+            }
+
+            int Length = InputString.Length;
+
+            if (Length <= Size)
+            {
+                return InputString;
+            }
+
+            return InputString.Substring(0, Size);
+        }
+
+        public static string TruncateRight(this string InputString, int Size)
+        {
+            if (string.IsNullOrEmpty(InputString))
+            {
+                return InputString;
+            }
+
             int Length = InputString.Length;
 
             if (Length <= Size)
@@ -272,17 +314,6 @@ namespace App.Framework.Extension
             }
 
             return InputString.Substring(Length - Size);
-        }
-
-        public static string TruncateRight(this string InputString, int Size)
-        {
-            int Length = InputString.Length;
-            if (Length <= Size)
-            {
-                return InputString;
-            }
-
-            return InputString.Substring(0, Size);
         }
 
         public static string RemoveAccents(this string input)
@@ -297,6 +328,44 @@ namespace App.Framework.Extension
             int.TryParse(input, out result);
 
             return (result == 0) ? null : result.ToString();
+        }
+
+        public static string GetSQLMoneyFormat(this decimal input)
+        {
+            return string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:0.00}", input);
+        }
+
+        public static string GetDateTimeFormat(this DateTime input, string type)
+        {
+            string date = "";
+
+            switch (type)
+            {
+                //Oracle
+                case "Oracle":
+                    date = string.Format("TO_DATE('{0}', 'YYYY/MM/DD')", input.ToString("yyyy/MM/dd"));
+                    break;
+                //Firebird
+                case "Firebird":
+                    date = "'" + input.ToString("yyyy/MM/dd") + "'";
+                    break;
+                //Informix
+                case "Informix":
+                    date = string.Format("TO_DATE('{0}', '%Y-%m-%d')", input.ToString("yyyy/MM/dd"));
+                    break;
+                //SQL Server
+                case "SQL Server":
+                    date = string.Format("CONVERT(datetime, '{0}', 103)", input.ToString("dd/MM/yyyy"));
+                    break;
+                case "MySQL":
+                    date = string.Format("STR_TO_DATE('{0}', '%d/%m/%Y')", input.ToString("dd/MM/yyyy"));
+                    break;
+                default:
+                    date = input.ToString("dd/MM/yyyy");
+                    break;
+            }
+
+            return date;
         }
     }
 }
